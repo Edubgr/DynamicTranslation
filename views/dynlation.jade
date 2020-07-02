@@ -1,0 +1,25 @@
+extends layout
+
+block content
+ body(onselectstart="return false")
+    div.nha( 
+        id = "nom" 
+    )
+        div.trad(
+            id="trad"
+        )
+        div.botoes
+            input.bt1(
+                id="btmais" 
+                type="image"
+                src="../images/mais.png"
+            )
+            input.bt2( 
+                id="btvoltar"
+                type="image"
+                src="../images/voltar.png"
+                onclick="voltar()"
+            )
+    script.
+        text=!{text}
+    script(src="../javascripts/dynlation.js")

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  form.caixa(
+    action="/input/dynlation" 
+    method="post"
+  )
+    textarea.textarea(
+      required name="text"
+      id="source" 
+      rows="10"
+      spellcheck="false" 
+      autocapitalize="off" 
+      autocomplete="off" 
+      autocorrect="off" 
+      placeholder="Digite seu texto aqui!"
+    )
+    div.divbt
+      button.btenv(type="submit") Enviar 
+  script(src="./javascripts/input.js")
+            
