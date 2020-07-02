@@ -1,5 +1,4 @@
 var express = require('express');
-var config = require("../config")
 const LanguageTranslatorV3 = require('ibm-watson/language-translator/v3');
 const { IamAuthenticator } = require('ibm-watson/auth');
 var router = express.Router();
@@ -7,9 +6,9 @@ var router = express.Router();
 const languageTranslator = new LanguageTranslatorV3({
   version: '2019-04-04',
   authenticator: new IamAuthenticator({
-    apikey: config.API_KEY,
+    apikey: '_lJFjh24vGapEXbtjdGFbY7D0cpkee72qtBkJ9zXzP5T',
   }),
-  url: config.Url,
+  url: 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/d65aadcc-e999-434d-9153-f21c8504f544',
 });
 
 router.get('/tradutor/:strin', function(req, res, next) {
