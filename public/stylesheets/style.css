@@ -1,26 +1,25 @@
 body{
   background-color: rgb(76, 76, 76);
   font-family: Noto Serif, serif;
-  font-size: 21px;
+  font-size: 1.8em;
   height: 100%;
-  padding-top: 40px;
+  padding-top: 3%;
 }
 html{
   height: 100%;;
 }
 .caixa{
   overflow: auto;
-  width: 75%;
+  width: 90%;
   position: relative;
   margin: 0 auto; 
   color: rgb(199, 199, 199);
-  padding: 40px;
+  padding: 5%;
   background-color:rgb(51, 51, 51);
 }
 .textarea{
   resize: none;
   overflow: auto hidden;  
-  padding: 10px;
   box-sizing: border-box;
   width: 100%;
   background-color:rgb(76, 76, 76);
@@ -42,7 +41,7 @@ html{
 }
 .nha{
   overflow: auto;
-  width: 75%;
+  width: 90%;
   margin: 0 auto; 
   color: rgb(199, 199, 199);
   padding: 1em;
@@ -50,11 +49,10 @@ html{
 }
 .backgroundIndex{
   overflow: auto;
-  width: 75%;
+  width: 90%;
   margin: 0 auto; 
-  font-size: 30px;
   color: rgb(199, 199, 199);
-  padding: 1em;
+  padding: 1%;
   background-color:rgb(51, 51, 51);
 }
 .trad{
