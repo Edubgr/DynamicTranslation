@@ -1,5 +1,5 @@
 var express = require('express');
-var config = require("../config")
+var configu = require("../configu.js")
 const LanguageTranslatorV3 = require('ibm-watson/language-translator/v3');
 const { IamAuthenticator } = require('ibm-watson/auth');
 var router = express.Router();
@@ -7,9 +7,9 @@ var router = express.Router();
 const languageTranslator = new LanguageTranslatorV3({
   version: '2019-04-04',
   authenticator: new IamAuthenticator({
-    apikey: config.API_KEY,
+    apikey: configu.api,
   }),
-  url: config.Url,
+  url: configu.urlr,
 });
 
 router.get('/tradutor/:strin', function(req, res, next) {
